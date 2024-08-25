@@ -1,17 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment Three</title>
+
+    <!-- font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/76cd2238bf.js" crossorigin="anonymous"></script>
+
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
     <!-- Tailwind And Daisy UI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+        <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'Book-primary': '#ABEF5F',
+            'view-primary': 'rgba(171, 239, 95, 0.5)',
+            'Design-Work-bg': 'rgb(244, 244, 244)',
+          }
+        }
+      }
+    }
+  </script>
+    
+  <style>
+    .font-Manrope{
+        font-family: "Manrope", sans-serif;
+    }
+    
+  </style>
 </head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+<body class="font-Manrope bg-stone-50">
+    <header class="container mx-auto mb-20">
+        <!-- Nav Section -->
+        <div class="navbar">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-3xl font-bold"><i class="fa-solid fa-arrow-right text-lg w-6 h-6 bg-Book-primary rounded-full text-black lg:flex items-center justify-center -rotate-45"></i> Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-xl font-medium ">
+                <li class="text-black duration-300 ease-in-out"><a>Home</a></li>
+                <li class="text-[#494949] duration-300 ease-in-out"><a>Services</a></li>
+                <li class="text-[#494949] duration-300 ease-in-out"><a>Portfolio</a></li>
+                <li class="text-[#494949] duration-300 ease-in-out"><a>Blogs</a></li>
+                <li class="text-[#494949] duration-300 ease-in-out"><a>Contact Us</a></li>   
+              </ul>
+            </div>
+            <div class="navbar-end lg:flex space-x-1.5">
+                <h6><i class="fa-solid fa-magnifying-glass w-6 h-6 bg-[#FFFFFF] rounded-full flex items-center justify-center"></i></h6>
+                <h6><i class="fa-solid fa-cart-shopping w-6 h-6 bg-[#FFFFFF] rounded-full lg:flex items-center justify-center"></i></h6>
+              <a class="btn bg-Book-primary text-black rounded-full">Book Consult <i class="fa-solid fa-arrow-right text-lg w-6 h-6 bg-[#1C1C1C] rounded-full text-white flex items-center justify-center -rotate-45"></i></a>
+            </div>
+
+          </div>
+          <!-- Banner Section -->
+         <section>
+                <div class="card-body items-center text-center">
+                    <img class="items-center" src="./assets/banner.png" alt="">
+                    <h1 class="card-title font-extrabold text-6xl mb-6">A barn house of this design has a striking appearance</h1>
+                    <p class="font-medium text-gray-700 mb-6 max-w-xl mx-auto">Combining traditional rustic elements with modern architectural features.Offering both aesthetic appeal and functional living space that embraces contemporary rural charm.</p>
+                    <div class="card-actions">
+                      <button class="btn bg-view-primary text-black rounded-full">View Details <i class="fa-solid fa-arrow-right text-lg w-6 h-6 bg-Book-primary rounded-full text-black flex items-center justify-center -rotate-45"></i></button>
+                    </div>
+            </div>
+         </section>
+    </header>
+
+    <main class="bg-Design-Work-bg">
+        <img class="pl-6" src="./assets/Vector.png" alt="">
+        <!-- Content Section -->
+         <section class="lg:w-10/12 lg:mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div>
+            <button class="btn btn-xs bg-white text-black rounded-full mb-6"><i class="fa-solid fa-arrow-right text-lg w-2 h-2 text-black flex items-center justify-center"></i>About Us</button>
+            <h1 class="font-bold text-3xl lg:text-4xl mb-6 max-w-xl mx-auto">We design thoughtful, liveable spaces</h1>
+            <p class="mb-6">Blend functionality with aesthetics, creating environments that enhance comfort, well-being, and everyday life.</p>
+            <div class="card card-side bg-base-100 shadow-xl mb-6 ">
+                <figure class="pl-6">
+                  <img
+                    src="./assets/commercial.png"
+                    alt="Movie" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Commercial</h2>
+                  <p>designed to inspire productivity, efficiency, and success, tailored to meet your business needs.</p>
+                </div>
+              </div>
+            <div class="card card-side bg-base-100 shadow-xl mb-6">
+                <figure class="pl-6">
+                  <img
+                    src="./assets/residential.png"
+                    alt="Movie" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Residential</h2>
+                  <p>For comfort, style, and functionality, creating personalized homes that reflect your lifestyle.</p>
+                </div>
+              </div>
+            </div>
+     <!-- Image Section -->
+     <div class="mb-24">
+        <img src="./assets/Rectangle.png" alt="">
+     </div>
+    </section>
+
+    <!-- Our Process Section -->
+     <Section>
+    <div class="text-center container mx-auto pb-28 bg-Design-Work-bg">
+        <button class="btn btn-xs bg-white text-black rounded-full mb-6"><i class="fa-solid fa-arrow-right text-lg w-2 h-2 text-black flex items-center justify-center"></i>How We Works</button>
+        <h1 class="text-3xl lg:text-4xl font-bold mb-6">Our Works Process</h1>
+        <p class="font-medium text-gray-700 mb-6 max-w-xl mx-auto">streamlined and efficient, from initial consultation to final execution, ensuring quality results and client satisfaction at every stage.</p>
+        <!-- Card section -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:w-10/12 lg:mx-auto">
+            <!-- Card 1 -->
+            <div class="card card-compact shadow-xl bg-[#E7C1D3] rounded-2xl pt-6 px-4">
+                <figure>
+                  <img
+                    src="./assets/concept.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Concept</h2>
+                  <p>Innovative creative solutions form the foundation of every successful project.</p>
+                </div>
+              </div>
+              <!-- Card 2 -->
+            <div class="card card-compact bg-base-100 shadow-xl bg-[#EFDA6E] rounded-2xl pt-6 px-4">
+                <figure>
+                  <img
+                    src="./assets/flow-chart.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Design Process</h2>
+                  <p>A collaborative journey from concept to creation, ensuring aesthetic excellence.</p>
+                </div>
+              </div>
+              <!-- Card 3 -->
+            <div class="card card-compact bg-base-100 shadow-xl bg-[#A4DAC3] rounded-2xl pt-6 px-4">
+                <figure>
+                  <img
+                    src="./assets/vision.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Supervision</h2>
+                  <p>Providing detailed oversight to ensure quality, timely completion of all projects.</p>
+                </div>
+              </div>
+              <!-- Card 4 -->
+            <div class="card card-compact bg-base-100 shadow-xl bg-[#77AAEA] rounded-2xl pt-6 px-4">
+                <figure>
+                  <img
+                    src="./assets/budget-planning.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Budget Planning</h2>
+                 <p>Strategic allocation of resources to ensure effective project financial constraints.</p>
+                 </div>
+              </div>
+        </div>
+    </div>
+     </Section>
+
+     <!-- Our Latest Portfolio Section -->
+      <section class="bg-white py-24 px-18">
+        <div class="text-center">
+            <button class="btn btn-xs bg-[#ABEF5F33] text-black rounded-full mb-4"><i class="fa-solid fa-arrow-right text-lg w-2 h-2 text-black flex items-center justify-center"></i>Explore our Latest works</button>
+            <h1 class="text-3xl lg:text-4xl font-bold mb-6">Our Latest Portfolio</h1>
+            <p class="font-medium text-gray-600 max-w-xl mx-auto mb-8">showcases our most recent projects, highlighting innovative designs, quality craftsmanship, and our commitment to excellence.</p>
+        </div>
+        <!--Grid Card Section -->
+         <div class="gap-4">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl shadow-md p-6 lg:flex justify-between">
+                <!-- Card Image -->
+              <div>
+                <img src="./assets/img1.png" alt="">
+              </div>
+              <!-- Card Text -->
+               <div>
+                <h2 class="text-xl font-bold mb-6">Commercial</h2>
+                <p class="text-gray-600 mb-5 max-w-xl mx-auto">Designed to boost productivity and reflect brand identity, blending functionality with aesthetics for optimal business success.</p>
+                <a class="btn btn-ghost text-xl font-bold">View Details<i class="fa-solid fa-arrow-right text-lg w-6 h-6 bg-Book-primary rounded-full text-black lg:flex items-center justify-center -rotate-45"></i></a>
+              
+
+               </div>
+                <!-- Card 2 -->
+             <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="./assets/img2.png" alt="">
+               </div>
+            </div>
+            <!-- card 3 -->
+             <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="./assets/img3.png" alt="">
+             </div>
+             <!-- Card 4 -->
+            <div class="bg-white rounded-2xl shadow-md p-6 lg:flex justify-between">
+                <!-- Card Image -->
+              <div>
+                <img src="./assets/img4.png" alt="">
+              </div>
+              <!-- Card Text -->
+               <div>
+                <h2 class="text-xl font-bold mb-6">Commercial</h2>
+                <p class="text-gray-600 mb-5 max-w-xl mx-auto">Designed to boost productivity and reflect brand identity, blending functionality with aesthetics for optimal business success.</p>
+                <a class="btn btn-ghost text-xl font-bold">View Details<i class="fa-solid fa-arrow-right text-lg w-6 h-6 bg-Book-primary rounded-full text-black lg:flex items-center justify-center -rotate-45"></i></a>
+               </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="./assets/img5.png" alt="">
+             </div>
+         </div>
+      </section>
+
+      <!-- Lets Discuss Next Project -->
+       <section>
+        <div class="bg-[url('/assets/ag.png')] border-solid border-y-8">
+        <div class="text-center">
+            <button class="btn btn-xs bg-[#ABEF5F33] text-black rounded-full mb-4"><i class="fa-solid fa-arrow-right text-lg w-2 h-2 text-black flex items-center justify-center"></i>Let’s Connect</button>
+            <h1 class="text-3xl lg:text-4xl font-bold mb-6">Let’s Discuss Next Project</h1>
+            <p class="font-medium text-gray-600 max-w-xl mx-auto mb-8">showcases our most recent projects, highlighting innovative designs, quality craftsmanship, and our commitment to excellence.</p>
+        </div>
+       </div>
+       </section>
+
+       
+
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
